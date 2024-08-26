@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <main class = "main container">
+      <header class="cabecalho">
+        <img class="logoAlura" src="/Imagens/logoAlura.png" alt="logo da Alura">
+        <h1>Mensagens Codificadas</h1>
+    </header>  
+    <!--Container onde fica a parte do usuario escrever, lado esquerdo da tela-->
+    <div>
+        <div class = "container-input">
+            <div class = "input">
+                <textarea id="input-texto" placeholder="Digite seu texto aqui..."style="resize: none" ></textarea>
+                <p>ATENÇÃO: Apenas letras maiúsculas e sem acento</p>
+            </div>
+    <!--Container onde fica a parte do resultado do encriptador-->
+    <div id="output">
+        <img src="Imagens/boneco.png" alt="boneco">
+        <h2>Sua mensagem aparecerá aqui</h2>
+        <span> Digite um texto que deseja criptografar ou discriptografar.</span>
+    </div>
+    </div>
+
+    <div class = "buttons">
+        <div class = "container-btn">
+            <button onClick="encriptar()" class="btn-criptografar"> Criptografar</button>
+            <button onClick="descriptar()"class="btn-descriptografar"> Descriptografar</button>
+        </div>
+    </div>
+    </main>  
+
+<script src="script.js"></script>
+
+</body>
+</html>
